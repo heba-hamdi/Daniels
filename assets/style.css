@@ -363,3 +363,42 @@ h6,
     justify-content: center;
     align-items: center;
 }
+
+/* testimonial */
+.title{
+    position: relative;
+}
+
+.title::after{
+    content: "";
+     border-bottom-style: dotted;
+     border-width: 3px;
+     padding-bottom: 0 !important;
+     width: 15%;
+     height: 1px;
+     border-color:#EBEBEB ;
+     position: absolute;
+     top:50%;
+     left:50%;
+     transform: translate(-50%, -50%);
+}
+
+
+
+
+.carousel-indicators {
+    /* position: absolute; */
+    bottom: -25%;
+}
+
+.carousel-indicators button {
+    border: 2px solid #869791!important;
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%;
+
+}
+
+.carousel-indicators .active {
+    background-color: #869791!important;
+}
