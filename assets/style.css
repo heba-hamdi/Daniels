@@ -1,22 +1,28 @@
-body{
+body {
     font-family: 'Poppins', sans-serif !important;
     font-weight: 400;
-   
+
 }
 
-h1, h2, h3, h4, h5, h6, .logo{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.logo {
     font-family: 'Montserrat', sans-serif !important;
     font-weight: 800;
-} 
+}
 
 /* Navbar */
 
-.nav-item{
+.nav-item {
     position: relative;
     font-size: 0.8rem !important;
 }
 
-.logo{
+.logo {
     font-size: 1rem !important;
 }
 
@@ -31,118 +37,329 @@ h1, h2, h3, h4, h5, h6, .logo{
     background-color: #000;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
-    
+
 }
 
- .nav-link:hover::before,  .nav-link.active::before{
+.nav-link:hover::before,
+.nav-link.active::before {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
 /* End of Navbar */
 
 /* Hero section */
-#home{
+#home {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),url(../img/bg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/bg.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
-.hero-text h2{
-    font-size:3.1rem;
+.hero-text h2 {
+    font-size: 3.1rem;
 }
 
-.hero-h1 span{
+.hero-h1 span {
     font-size: 3rem;
     font-weight: 200;
     font-family: 'Montserrat', sans-serif !important;
 }
-.larry{
-    font-size:3.75rem !important;
-    font-weight:400;
+
+.larry {
+    font-size: 3.75rem !important;
+    font-weight: 400;
 }
 
-.larry::after{
+.larry::after {
     content: "|";
     animation: typing 5s infinite linear;
 }
 
-@keyframes typing{
-    0%{content: " |"}
-    2%{content: " L |"}
-    4%{content: " La|"}
-    6%{content: " Lar |"}
-    8%{content: " Larr |"}
-    10%{content: " Larry |"}
-    12%{content: " Larry  |"}
-    14%{content: " Larry D |"}
-    16%{content: " Larry Da |"}
-    18%{content: " Larry Dan |"}
-    20%{content: " Larry Dani |"}
-    22%{content: " Larry Danie |"}
-    24%{content: " Larry Daniel |"}
-    26%{content: " Larry Daniels |"}
-    28%{content: " Larry Daniel |"}
-    30%{content: " Larry Danie |"}
-    32%{content: " Larry Dani |"}
-    34%{content: " Larry Dan |"}
-    36%{content: " Larry Da |"}
-    38%{content: " Larry D|"}
-    40%{content: " Larry |"}
-    42%{content: " Larry |"}
-    44%{content: " Larr |"}
-    46%{content: " Lar |"}
-    48%{content: " La |"}
-    50%{content: " L |"}
-    52%{content: "  |"}
-    59%{content: "  |"}
+@keyframes typing {
+    0% {
+        content: " |"
+    }
+
+    2% {
+        content: " L |"
+    }
+
+    4% {
+        content: " La|"
+    }
+
+    6% {
+        content: " Lar |"
+    }
+
+    8% {
+        content: " Larr |"
+    }
+
+    10% {
+        content: " Larry |"
+    }
+
+    12% {
+        content: " Larry  |"
+    }
+
+    14% {
+        content: " Larry D |"
+    }
+
+    16% {
+        content: " Larry Da |"
+    }
+
+    18% {
+        content: " Larry Dan |"
+    }
+
+    20% {
+        content: " Larry Dani |"
+    }
+
+    22% {
+        content: " Larry Danie |"
+    }
+
+    24% {
+        content: " Larry Daniel |"
+    }
+
+    26% {
+        content: " Larry Daniels |"
+    }
+
+    28% {
+        content: " Larry Daniel |"
+    }
+
+    30% {
+        content: " Larry Danie |"
+    }
+
+    32% {
+        content: " Larry Dani |"
+    }
+
+    34% {
+        content: " Larry Dan |"
+    }
+
+    36% {
+        content: " Larry Da |"
+    }
+
+    38% {
+        content: " Larry D|"
+    }
+
+    40% {
+        content: " Larry |"
+    }
+
+    42% {
+        content: " Larry |"
+    }
+
+    44% {
+        content: " Larr |"
+    }
+
+    46% {
+        content: " Lar |"
+    }
+
+    48% {
+        content: " La |"
+    }
+
+    50% {
+        content: " L |"
+    }
+
+    52% {
+        content: "  |"
+    }
+
+    59% {
+        content: "  |"
+    }
 
 
-    60%{content: " D |"}
-    62%{content: " De |"}
-    64%{content: " Dev|"}
-    66%{content: " Devel |"}
-    70%{content: " Develo |"}
-    72%{content: " Develop |"}
-    74%{content: " Develope |"}
-    76%{content: " Developer |"}
-    78%{content: " Develope|"}
-    80%{content: " Develop |"}
-    82%{content: " Develo |"}
-    84%{content: " Devel |"}
-    86%{content: " Deve |"}
-    88%{content: " Dev |"}
-    90%{content: " De |"}
-    92%{content: " D |"}
-    93%{content: "  |"} 
-    100%{content: "  |"} 
+    60% {
+        content: " D |"
+    }
+
+    62% {
+        content: " De |"
+    }
+
+    64% {
+        content: " Dev|"
+    }
+
+    66% {
+        content: " Devel |"
+    }
+
+    70% {
+        content: " Develo |"
+    }
+
+    72% {
+        content: " Develop |"
+    }
+
+    74% {
+        content: " Develope |"
+    }
+
+    76% {
+        content: " Developer |"
+    }
+
+    78% {
+        content: " Develope|"
+    }
+
+    80% {
+        content: " Develop |"
+    }
+
+    82% {
+        content: " Develo |"
+    }
+
+    84% {
+        content: " Devel |"
+    }
+
+    86% {
+        content: " Deve |"
+    }
+
+    88% {
+        content: " Dev |"
+    }
+
+    90% {
+        content: " De |"
+    }
+
+    92% {
+        content: " D |"
+    }
+
+    93% {
+        content: "  |"
+    }
+
+    100% {
+        content: "  |"
+    }
 
 }
 
 /* about */
 
-.about-dark-btn:hover{
+.about-dark-btn:hover {
     background-color: #fff;
     color: #000;
 }
 
 /* services */
 
-.title{
-    font-size:2.5rem ;
+.title {
+    font-size: 2.5rem;
 }
 
-.service-icon-box{
-    width:70px;
+.service-icon-box {
+    width: 70px;
     height: 70px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 }
 
-.service-content p{
+.service-content p {
     font-size: .9rem !important;
+}
+
+/* portofolio */
+.tab-box {
+    position: relative;
+    transition: hover 1s ease;
+}
+
+.tb-text h6 {
+    position: absolute;
+    z-index: 999;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.tb-text .tab-icons {
+    position: absolute;
+    z-index: 999;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.tab-box {
+    border: 4px solid transparent;
+    transition: all 1s ease;
+}
+
+.tab-box:hover .tb-text h6,
+.tab-box:hover .tb-text .tab-icons {
+    top: 47%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.tab-box:hover .tb-text .tab-icons {
+    top: 55%;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.tab-box:hover::after {
+    content: "";
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 4px solid #e0e0e0
+}
+
+
+.tab-icons a {
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
