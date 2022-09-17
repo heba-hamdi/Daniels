@@ -34,7 +34,7 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top bg-light">
+  <nav class="navbar navbar-expand-lg bg-white fixed-top bg-light">
     <div class="container">
       <a class="navbar-brand fw-bold text-uppercase logo" href="#">Daniels</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -42,29 +42,44 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item me-4">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-          </li>
-          <li class="nav-item me-4">
-            <a class="nav-link text-dark" href="#about">About</a>
-          </li>
-          <li class="nav-item me-4">
-            <a class="nav-link text-dark" href="#">Services</a>
-          </li>
-          <li class="nav-item me-4">
-            <a class="nav-link text-dark" href="#">Works</a>
-          </li>
-          <li class="nav-item me-4">
-            <a class="nav-link text-dark" href="#">Clients</a>
-          </li>
-          <li class="nav-item me-4">
-            <a class="nav-link text-dark" href="#">Blog</a>
-          </li>
-          <li class="nav-item me-4">
-            <a class="nav-link text-dark" href="#">Contact</a>
-          </li>
 
+        <ul class="nav nav-navbar ms-auto" id="pills-tab" role="navigation">
+
+          <li class="nav-item">
+            <div class="cap" data-bs-toggle="pill" data-bs-target="#about"> <a href="#home"
+                class="nav-link text-dark text-decoration-none">Home</a> </div>
+          </li>
+          <li class="nav-item">
+            <div class="cap" data-bs-toggle="pill" data-bs-target="#about">
+              <a href="#about" class="nav-link text-dark text-decoration-none">About</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="cap" data-bs-toggle="pill" data-bs-target="#about">
+              <a href="#services" class="nav-link  text-dark text-decoration-none">Services</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="cap " data-bs-toggle="pill" data-bs-target="#about"> 
+              <a href="#portofolio"
+                class="nav-link  text-dark text-decoration-none">Portofolio</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class=" cap " data-bs-toggle="pill" data-bs-target="#about">
+              <a href="#testimonial" class="nav-link  text-dark text-decoration-none">Clients</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="  cap" data-bs-toggle="pill" data-bs-target="#about">
+              <a href="#blog" class="nav-link  text-dark text-decoration-none">Blog</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class=" cap " data-bs-toggle="pill" data-bs-target="#about">
+              <a href="#contact" class="nav-link  text-dark text-decoration-none">Contact</a>
+            </div>
+          </li>
 
         </ul>
       </div>
@@ -75,13 +90,28 @@
   <!-- Hero section -->
   <section class="home d-flex align-items-center text-center text-white" id="home">
     <div class="container">
-      <div class="hero-text ">
+      <div class="hero-text">
         <h2 class="text-white">Hello</h2>
         <div class="hero-h1 text-white">
           <span>I Am </span>
-          <h1 class="d-inline-block larry">
-
-          </h1>
+          <h1 class="d-inline-block larry"></h1>
+          <div class="social-icons mt-5">
+            <a href="#" class="p-3  social-link text-center">
+              <i class="fa-brands fa-facebook-f text-white"></i>
+            </a>
+            <a href="#" class="p-3  social-link text-center">
+              <i class="fa-brands fa-twitter text-white"></i>
+            </a>
+            <a href="#" class="p-3  social-link text-center">
+              <i class="fa-brands fa-linkedin text-white"></i>
+            </a>
+            <a href="#" class="p-3  social-link text-center">
+              <i class="fa-brands fa-behance text-white"></i>
+            </a>
+            <a href="#" class="p-3  social-link text-center">
+              <i class="fa-brands fa-youtube text-white"></i>
+            </a>
+          </div>
         </div>
 
       </div>
@@ -92,9 +122,9 @@
   <section id="about" class="py-5">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 offset-1">
-          <div class="about-img-wrapper">
-            <img src="img/hero.jpg" class="w-100" alt="">
+        <div class="col-lg-4 offset-1 dotting">
+          <div class="about-img-wrapper mb-5">          
+            <img src="img/hero.jpg" class="hero-img w-100" alt="">
           </div>
         </div>
         <div class="col-lg-7 ps-5">
@@ -166,7 +196,7 @@
 
         <!-- single card -->
 
-        <div class="col-md-4 p-4">
+        <div class="col-lg-4 p-4">
           <div class="service-box rounded-4 bg-white text-center shadow  p-3 ">
             <div class="service-wrapper d-flex justify-content-center">
               <div class="p-5 service-icon-box bg-light d-flex justify-content-center align-items-center">
@@ -183,7 +213,7 @@
         </div>
         <!-- single card -->
 
-        <div class="col-md-4 p-4">
+        <div class="col-lg-4 p-4">
           <div class="service-box rounded-4 bg-white text-center shadow  p-3 ">
             <div class="service-wrapper d-flex justify-content-center">
               <div class="p-5 service-icon-box bg-light d-flex justify-content-center align-items-center">
@@ -200,7 +230,7 @@
         </div>
         <!-- single card -->
 
-        <div class="col-md-4 p-4">
+        <div class="col-lg-4 p-4">
           <div class="service-box rounded-4 bg-white text-center shadow  p-3 ">
             <div class="service-wrapper d-flex justify-content-center">
               <div class="p-5 service-icon-box bg-light d-flex justify-content-center align-items-center">
@@ -217,7 +247,7 @@
         </div>
         <!-- single card -->
 
-        <div class="col-md-4 p-4">
+        <div class="col-lg-4 p-4">
           <div class="service-box rounded-4 bg-white text-center shadow  p-3 ">
             <div class="service-wrapper d-flex justify-content-center">
               <div class="p-5 service-icon-box bg-light d-flex justify-content-center align-items-center">
@@ -234,7 +264,7 @@
         </div>
         <!-- single card -->
 
-        <div class="col-md-4 p-4">
+        <div class="col-lg-4 p-4">
           <div class="service-box rounded-4 bg-white text-center shadow p-3 ">
             <div class="service-wrapper d-flex justify-content-center">
               <div class="p-5 service-icon-box bg-light d-flex justify-content-center align-items-center">
@@ -251,7 +281,7 @@
         </div>
         <!-- single card -->
 
-        <div class="col-md-4 p-4">
+        <div class="col-lg-4 p-4">
           <div class="service-box rounded-4 bg-white text-center shadow p-3 ">
             <div class="service-wrapper d-flex justify-content-center">
               <div class="p-5 service-icon-box bg-light d-flex justify-content-center align-items-center">
@@ -283,21 +313,21 @@
           <!-- TABS -->
           <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
 
-            <li class="nav-item" role="presentation">
+            <li class="nav-item">
               <button class="nav-link fw-bold fs-6 active text-dark bg-white" id="all-tab" data-bs-toggle="pill"
                 data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item">
               <button class="nav-link fw-bold fs-6 text-dark bg-white" id="brand-tab" data-bs-toggle="pill"
                 data-bs-target="#brand" type="button" role="tab" aria-controls="brand"
                 aria-selected="false">Brand</button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item">
               <button class="nav-link fw-bold fs-6 text-dark bg-white" id="design-tab" data-bs-toggle="pill"
                 data-bs-target="#design" type="button" role="tab" aria-controls="design"
                 aria-selected="false">Design</button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item">
               <button class="nav-link fw-bold fs-6 text-dark bg-white" id="graphic-tab" data-bs-toggle="pill"
                 data-bs-target="#graphic" type="button" role="tab" aria-controls="graphic"
                 aria-selected="false">Brand</button>
@@ -314,7 +344,7 @@
                     <!-- tab-text -->
                     <div class="tb-text">
                       <h6>Web Design</h6>
-                      <div class="tab-icons text-center d-flex justify-content-center">
+                      <div class="tab-icons text-center d-flex justify-content-center mt-md-3">
                         <a href="#" class="bg-dark">
                           <i class="fa-solid fa-link-slash text-white align-self-center"></i>
                         </a>
@@ -333,7 +363,7 @@
                     <!-- tab-text -->
                     <div class="tb-text">
                       <h6>Web Design</h6>
-                      <div class="tab-icons text-center d-flex justify-content-center">
+                      <div class="tab-icons text-center d-flex justify-content-center mt-md-3">
                         <a href="#" class="bg-dark">
                           <i class="fa-solid fa-link-slash text-white align-self-center"></i>
                         </a>
@@ -351,7 +381,7 @@
                     <!-- tab-text -->
                     <div class="tb-text">
                       <h6>Web Design</h6>
-                      <div class="tab-icons text-center d-flex justify-content-center">
+                      <div class="tab-icons text-center d-flex justify-content-center mt-md-3">
                         <a href="#" class="bg-dark">
                           <i class="fa-solid fa-link-slash text-white align-self-center"></i>
                         </a>
@@ -369,7 +399,7 @@
                     <!-- tab-text -->
                     <div class="tb-text">
                       <h6>Web Design</h6>
-                      <div class="tab-icons text-center d-flex justify-content-center">
+                      <div class="tab-icons text-center d-flex justify-content-center mt-md-3">
                         <a href="#" class="bg-dark">
                           <i class="fa-solid fa-link-slash text-white align-self-center"></i>
                         </a>
@@ -387,7 +417,7 @@
                     <!-- tab-text -->
                     <div class="tb-text">
                       <h6>Web Design</h6>
-                      <div class="tab-icons text-center d-flex justify-content-center">
+                      <div class="tab-icons text-center d-flex justify-content-center mt-md-3">
                         <a href="#" class="bg-dark">
                           <i class="fa-solid fa-link-slash text-white align-self-center"></i>
                         </a>
@@ -405,7 +435,7 @@
                     <!-- tab-text -->
                     <div class="tb-text">
                       <h6>Web Design</h6>
-                      <div class="tab-icons  d-flex ">
+                      <div class="tab-icons  d-flex mt-md-3 ">
                         <a href="#" class="bg-dark ">
                           <i class="fa-solid fa-link-slash text-white"></i>
                         </a>
@@ -428,7 +458,7 @@
                     <!-- tab-text -->
                     <div class="tb-text">
                       <h6>Web Design</h6>
-                      <div class="tab-icons  d-flex ">
+                      <div class="tab-icons  d-flex mt-md-3">
                         <a href="#" class="bg-dark ">
                           <i class="fa-solid fa-link-slash text-white"></i>
                         </a>
@@ -446,7 +476,7 @@
                     <!-- tab-text -->
                     <div class="tb-text">
                       <h6>Web Design</h6>
-                      <div class="tab-icons  d-flex ">
+                      <div class="tab-icons  d-flex mt-md-3 ">
                         <a href="#" class="bg-dark ">
                           <i class="fa-solid fa-link-slash text-white"></i>
                         </a>
@@ -468,7 +498,7 @@
                     <!-- tab-text -->
                     <div class="tb-text">
                       <h6>Web Design</h6>
-                      <div class="tab-icons  d-flex ">
+                      <div class="tab-icons  d-flex mt-md-3">
                         <a href="#" class="bg-dark ">
                           <i class="fa-solid fa-link-slash text-white"></i>
                         </a>
@@ -486,7 +516,7 @@
                     <!-- tab-text -->
                     <div class="tb-text">
                       <h6>Web Design</h6>
-                      <div class="tab-icons  d-flex ">
+                      <div class="tab-icons  d-flex mt-md-3">
                         <a href="#" class="bg-dark ">
                           <i class="fa-solid fa-link-slash text-white"></i>
                         </a>
@@ -509,7 +539,7 @@
                     <div class="tb-text">
                       <h6>Web Design</h6>
                       <div class="tab-icons  d-flex ">
-                        <a href="#" class="bg-dark ">
+                        <a href="#" class="bg-dark mt-md-3">
                           <i class="fa-solid fa-link-slash text-white"></i>
                         </a>
                         <a href="#" class="bg-dark">
@@ -526,7 +556,7 @@
                     <!-- tab-text -->
                     <div class="tb-text">
                       <h6>Web Design</h6>
-                      <div class="tab-icons  d-flex ">
+                      <div class="tab-icons  d-flex mt-md-3">
                         <a href="#" class="bg-dark ">
                           <i class="fa-solid fa-link-slash text-white"></i>
                         </a>
@@ -544,7 +574,7 @@
                     <!-- tab-text -->
                     <div class="tb-text">
                       <h6>Web Design</h6>
-                      <div class="tab-icons  d-flex ">
+                      <div class="tab-icons  d-flex mt-md-3">
                         <a href="#" class="bg-dark ">
                           <i class="fa-solid fa-link-slash text-white"></i>
                         </a>
@@ -615,36 +645,36 @@
 
   <!-- counter -->
   <section class="py-5" id="counter">
-    <div class="container py-5">
-      <div class="row py-5 text-center">
+    <div class="container">
+      <div class="row text-center">
         </h2>
         <div class="col-lg-3">
           <div class="counter-icon-box pb-3">
             <i class="fas fa-users fa-2xl"></i>
           </div>
           <h3>850</h3>
-          <p>Happy Customers</p>
+          <p class="mb-md-5">Happy Customers</p>
         </div>
         <div class="col-lg-3">
           <div class="counter-icon-box pb-3">
             <i class="fa-solid fa-thumbs-up fa-2xl"></i>
           </div>
           <h3>230</h3>
-          <p>Complete Projects</p>
+          <p class="mb-md-5">Complete Projects</p>
         </div>
         <div class="col-lg-3">
           <div class="counter-icon-box pb-3">
             <i class="fas fa-bullhorn fa-2xl"></i>
           </div>
           <h3>9450</h3>
-          <p>Lines Of Code</p>
+          <p class="mb-md-5">Lines Of Code</p>
         </div>
         <div class="col-lg-3">
           <div class="counter-icon-box pb-3">
             <i class="fa-solid fa-cloud-arrow-down fa-2xl"></i>
           </div>
           <h3>780</h3>
-          <p>Files Downloaded</p>
+          <p class="mb-md-5">Files Downloaded</p>
         </div>
       </div>
     </div>
@@ -751,11 +781,16 @@
 
         <form class="input-field m-auto">
 
-          <div class="input-row d-flex justify-content-between my-3 ">
-            <input type="text" name="name" placeholder="Name" class="form-control w-50 me-2">
-            <input type="email" name="email" placeholder="Email" class="form-control w-50">
+          <div class="input-row my-3 d-lg-flex justify-content-lg-between">
+            <div class=" col-lg-6 col-md-12 mb-3 me-2">
+              <input type="text" name="name" placeholder="Name" class="form-control">
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <input type="email" name="email" placeholder="Email" class="form-control">
+
+            </div>
           </div>
-          <textarea class="form-control m-auto" name="" rows="5" placeholder="Message"></textarea>
+          <textarea class="form-control m-auto " name="" rows="5" placeholder="Message"></textarea>
           <div class="btn-row mt-4 text-start">
             <button type="submit" class="submit btn btn-dark  ">submit</button>
           </div>
@@ -777,7 +812,7 @@
     </div>
   </footer>
   <!-- end of footer -->
-
+  <!-- scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
     integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
