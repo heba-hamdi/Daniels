@@ -402,6 +402,16 @@ h6,
     background-color: #869791!important;
 }
 
+/* blog */
+
+.card-title{
+    line-height: 32px;
+}
+
+.card-body a{
+    border-bottom: 2px solid;
+}
+
 /* contact */
 
 .contact-icon-box{

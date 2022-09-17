@@ -20,6 +20,10 @@
   <!-- font awesome -->
   <link rel="stylesheet" href="assets/all.min.css">
 
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/owl.theme.default.min.css">
+
   <!-- Bootstrap link -->
   <link rel="stylesheet" href="assets/bootstrap.min.css">
 
@@ -653,43 +657,58 @@
       <div class="row">
         <h2 class="title text-center pb-5">Our Blog.</h2>
 
-        <!-- carousel -->
+        <!-- owl carousel -->
+        <div class="owl-carousel owl-theme">
 
-        <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class=" carousel-item active row d-flex">
-              <div class="col-lg-4">
-                <img src="img/blog/1.jpg " class="w-100" alt="">
-              </div>
-              <div class="col-lg-4">
-                <img src="img/blog/2.jpg" class="w-100" alt="">
-              </div>
-              <div class="col-lg-4">
-                <img src="img/blog/3.jpg" class="w-100" alt="">
+          <!-- single card -->
+          <div class="item me-5">
+            <div class="card">
+              <img src="img/blog/1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <small class="text-muted d-block pt-3 pb-2">Themeforest</small>
+                <h5 class="card-title mb-3">The 20 Best Lightroom Presets You Need to Know About</h5>
+                <a href="#" class="text-muted more text-decoration-none">Read More</a>
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="col-lg-4">
-              <img src="img/blog/4.jpg" class="w-100" alt="...">
+          </div>
+          <!-- End of single card -->
+          <!-- single card -->
+          <div class="item me-5">
+            <div class="card">
+              <img src="img/blog/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <small class="text-muted d-block pt-3 pb-2">Themeforest</small>
+                <h5 class="card-title mb-3">The 20 Best Lightroom Presets You Need to Know About</h5>
+                <a href="#" class="text-muted more text-decoration-none">Read More</a>
+              </div>
             </div>
           </div>
+          <!-- End of single card -->
+          <!-- single card -->
+          <div class="item me-5">
+            <div class="card">
+              <img src="img/blog/3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <small class="text-muted d-block pt-3 pb-2">Themeforest</small>
+                <h5 class="card-title mb-3">The 20 Best Lightroom Presets You Need to Know About</h5>
+                <a href="#" class="text-muted more text-decoration-none">Read More</a>
+              </div>
+            </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <!-- End of single card -->
+          <!-- single card -->
+          <div class="item me-5">
+            <div class="card">
+              <img src="img/blog/4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <small class="text-muted d-block pt-3 pb-2">Themeforest</small>
+                <h5 class="card-title mb-3">The 20 Best Lightroom Presets You Need to Know About</h5>
+                <a href="#" class="text-muted more text-decoration-none">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- End of single card -->
         </div>
-
-        <!-- end of carousel -->
-
       </div>
     </div>
   </section>
@@ -700,7 +719,7 @@
     <div class="container">
       <div class="row text-center m-auto">
         <h2 class="title text-center pb-5">Contact Us.</h2>
-        
+
         <div class="col-lg-4 py-5 cont-col">
           <div class="contact-icon-box">
             <i class="fa-solid fa-location-arrow fa-xl"></i>
@@ -728,39 +747,44 @@
           </p>
         </div>
 
-       
 
-          <form class="input-field m-auto">
-           
-            <div class="input-row d-flex justify-content-between my-3 ">
-                <input type="text" name="name" placeholder="Name" class="form-control w-50 me-2">
-                <input type="email" name="email" placeholder="Email" class="form-control w-50">
-            </div>
-            <textarea class="form-control m-auto" name=""  rows="5" placeholder="Message"></textarea>
-            <div class="btn-row mt-4 text-start">
+
+        <form class="input-field m-auto">
+
+          <div class="input-row d-flex justify-content-between my-3 ">
+            <input type="text" name="name" placeholder="Name" class="form-control w-50 me-2">
+            <input type="email" name="email" placeholder="Email" class="form-control w-50">
+          </div>
+          <textarea class="form-control m-auto" name="" rows="5" placeholder="Message"></textarea>
+          <div class="btn-row mt-4 text-start">
             <button type="submit" class="submit btn btn-dark  ">submit</button>
-        </div>
-        </form>  
-        </div>
+          </div>
+        </form>
       </div>
+    </div>
     </div>
   </section>
   <!-- end of contact -->
 
   <!-- footer -->
-      <!-- footer -->
-      <footer class="mt-5 bg-dark">
-        <div class="container py-4 text-center">
-            <span class="copyright text-muted">
-              Copy Right 2018 © By Daniels All Rights Reserved
-            </span>
+  <!-- footer -->
+  <footer class="mt-5 bg-dark">
+    <div class="container py-4 text-center">
+      <span class="copyright text-muted">
+        Copy Right 2018 © By Daniels All Rights Reserved
+      </span>
 
-        </div>
-    </footer>
+    </div>
+  </footer>
   <!-- end of footer -->
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/owl.carousel.min.js"></script>
   <script src="js/all.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
